@@ -1,0 +1,57 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: grid;
+    margin-top: 40vh;
+    justify-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+.main-btn{
+    border: 2px solid #0c5e96;
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: black;
+    font-size: 14px;
+}
+.main-btn:hover{
+    background-color: #0c5e96;
+    color: white;
+}
+.natalie-btn{
+    border: 2px solid #0c5e96;
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: black;
+    font-size: 14px;
+}
+.natalie-btn:hover{
+    background-color: #0c5e96;
+    color: white;
+}
+
+.arrow {
+    max-width: 50%;
+    margin-top: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.arrow-btn {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.arrow > img:nth-child(1) {
+    margin-left: 10px;
+}
+.main-content {
+    text-align: center;
+}   

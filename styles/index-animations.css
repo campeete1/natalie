@@ -1,0 +1,57 @@
+:root {
+    --bg-color: white;
+    --typewriterSpeed: 5s;
+    --typewriterCharacters: 53;
+  }  
+  p {
+    position: relative;
+    position: relative;
+  }
+  p::before,
+  p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  p::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 2s forwards;
+  }
+  p::after {
+    width: 0.125em;
+    background: rgb(0, 0, 0);
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 2s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  .arrow-btn {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

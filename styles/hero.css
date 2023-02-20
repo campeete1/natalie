@@ -1,0 +1,12 @@
+d-btn{
+    display: inline-flex;
+    gap: 15px;
+    justify-self: center;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+}
+.btn{
+    display: inline-grid;
+    justify-content: center;
+}
